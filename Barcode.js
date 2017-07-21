@@ -10,6 +10,7 @@ import React, {
     Component,
     ViewPropTypes
 } from 'react'
+import PropTypes from 'prop-types'
 import {
     View,
     requireNativeComponent,
@@ -35,14 +36,14 @@ export default class Barcode extends Component {
 
     static propTypes = {
         ...ViewPropTypes,
-        onBarCodeRead: React.PropTypes.func.isRequired,
-        barCodeTypes: React.PropTypes.array,
-        scannerRectWidth: React.PropTypes.number,
-        scannerRectHeight: React.PropTypes.number,
-        scannerRectTop: React.PropTypes.number,
-        scannerRectLeft: React.PropTypes.number,
-        scannerLineInterval: React.PropTypes.number,
-        scannerRectCornerColor: React.PropTypes.string,
+        onBarCodeRead: PropTypes.func.isRequired,
+        barCodeTypes: PropTypes.array,
+        scannerRectWidth: PropTypes.number,
+        scannerRectHeight: PropTypes.number,
+        scannerRectTop: PropTypes.number,
+        scannerRectLeft: PropTypes.number,
+        scannerLineInterval: PropTypes.number,
+        scannerRectCornerColor: PropTypes.string,
     }
 
     render() {
